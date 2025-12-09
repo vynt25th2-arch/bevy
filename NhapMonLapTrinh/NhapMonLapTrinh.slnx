@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Buoi6/Buoi6.vcxproj" />
+  <Project Path="Buoi6/Buoi6.vcxproj" Id="f8a93fb2-0ab5-492a-9486-5047ff2ba9aa" />
 </Solution>

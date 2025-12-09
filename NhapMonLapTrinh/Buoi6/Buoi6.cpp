@@ -1,20 +1,59 @@
-// Buoi6.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+
 
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+void cau1() {
+	int n;
+	cout << "nhap n :";
+	cin >> n;
+	int sum = 0;
+	for (int i = 1; i >= n; i++) {
+		sum += i;
+	}
+	cout << " tong tu 1 den " << n << " la:" << sum << endl;
 }
+void cau6() {
+	int n, tong = 0;
+	cout << "nhap n :";
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		if (n % i == 0) {
+			tong += i;
+		}
+	}
+	cout << "tong cac uoc cua so  " << n << "la :" << tong << endl;
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+}
+void cau7() {
+	int n, tong = 0;
+	cout << " nhap n :";
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		if (n % i == 0) {
+			tong += i;
+		}
+	}
+	if (n == tong)
+		cout << n << "la so hoan thien ." << endl;
+	else
+		cout << n << " khong phai la so hoan thien ." << endl;
+}
+void cau8() {
+	int n, dem = 0;
+	cout << "nhap n:";
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		if (n % i == 0) {
+			dem++;
+		}
+   }
+	if (dem == 2)
+		cout << n << " la so nguyen to " << endl;
+	else
+		cout << n << " khong phai la so nguyen to " << endl;
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+}
+int main() {
+	cau8();
+}
