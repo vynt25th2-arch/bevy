@@ -51,9 +51,16 @@ void cau8() {
 		cout << n << " la so nguyen to " << endl;
 	else
 		cout << n << " khong phai la so nguyen to " << endl;
-
-
 }
-int main() {
-	cau8();
+void cau12() {
+	for (int ga = 0; ga <= 36; ga++) {
+		int cho = 36 - ga;
+		if (2 * ga + 4 * cho == 100) {
+			cout << " so ga :" << ga << " , so cho :" << cho << endl;
+		}
+	}
+}
+int main()
+{
+	cau12();
 }
